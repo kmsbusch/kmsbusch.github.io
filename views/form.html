@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>About Me</title>
+    <link rel='icon' href='../resources/img/favicon.ico' type='image/x-icon'/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="../site.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="mypage_bootstrap.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="projects.html">Projects <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">index.html <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav m1-auto">
+                <li class="nav-item active">
+                    <a href="https://github.com/kmsbusch/">
+                        <img src="https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg" height=50px>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <form>
+    <div id="addInterestForm">
+        <div class="form-group" id="interestName">
+          <h1>Add New Interest</h1>
+          <label for="NewInterest">Interest Name</label>
+          <input type="name" class="form-control" id="NewInterest" placeholder="Name">
+        </div>
+        
+        <div class="form-group" id="interestDescription">
+           <label for="interestDesc">Text about interest</label>
+           <textarea class="form-control" id="interestDesc" rows="3"></textarea>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="container">
+                    <p>Upload Local Image:</p>
+                    <form action="/action_page.php">
+                        <input type="file" id="myFile" name="filename2">
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group" id="NumberOfTweets">
+                    <label for="numTweets">Select # of Tweets to Display</label>
+                    <select class="form-control" id="numTweets">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <p>On a scale of 1-5 how interested in this are you?</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="interestLevel" id="interestLevel1" value="1">
+                    <label class="form-check-label" for="interestLevel1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="interestLevel" id="interestLevel2" value="2">
+                    <label class="form-check-label" for="interestLevel2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="interestLevel" id="interestLevel3" value="3">
+                    <label class="form-check-label" for="interestLevel3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="interestLevel" id="interestLevel4" value="4">
+                    <label class="form-check-label" for="interestLevel4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="interestLevel" id="interestLevel5" value="5">
+                    <label class="form-check-label" for="interestLevel5">5</label>
+                </div>
+            </div>
+        </div>
+        <p>Login to Finish Submitting</p>
+        <div class="row">
+            <div class="col-sm">
+                    <input type="name" class="form-control" id="username" placeholder="Username">
+            </div>
+            <div class="col-sm">
+                <input type="name" class="form-control" id="password" placeholder="Password">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm" id="submitButton">
+                <a class="btn btn-primary" href="mypage_bootstrap.html" role="button">Submit</a>
+            </div>
+        </div>
+        
+        
+
+    </div>    
+    </form>
+
+  </body>
+</html>
