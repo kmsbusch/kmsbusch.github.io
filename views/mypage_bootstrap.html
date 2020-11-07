@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,7 +7,19 @@
     <title>About Me</title>
     <link rel='icon' href='../resources/img/favicon.ico' type='image/x-icon'/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-	<link href="../site.css" rel="stylesheet">
+    <link href="../site.css" rel="stylesheet">
+    <script>
+    function addCard(interest)
+    {
+      var newCard = $(`<div class="card">new thing</div>`);
+      newCard.appendTo("#interest");
+      <a href="#" class="btn" onclick="deleteCard(interest)">Add</a>
+    }
+    function deleteCard(remove)
+    {
+      document.getElementById(remove).remove()
+    }
+    </script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -18,14 +29,24 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="mypage_bootstrap.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="../index.html">Index <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="mypage_bootstrap.html">Profile <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="projects.html">Projects <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="../index.html">index.html <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="../signup-modal/login.html">Sign Up Modal <span class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="../tic-tac-toe/tic-tac-toe.html">Tic Tac Toe <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="flickrapi.html">Flicker API Gallery <span class="sr-only">(current)</span></a>
+            </li>
+
           </ul class="navbar-nav m1-auto">
             <li class="nav-item active">
                 <a href="https://github.com/kmsbusch/">
@@ -53,27 +74,31 @@
       <div class="col-sm-4">
         <div class="card">
           <img class="card-img-top" id="coding_card_img" src="https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg" alt="Code on Screen">
-          <div class="card-body">
+          <div class="card-body" id="interest1">
             <h5 class="card-title">Coding</h5>
-            <p class="card-text">I like making things on the computer through code.</p>
+            <p class="card-text">I like making things on the computer with code.</p>
+            <a href="#" class="btn" onclick="addCard(interest1)">Add</a>
           </div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="card">
           <img class="card-img-top" id="vg_card_img" src="https://www.wallpapertip.com/wmimgs/169-1691716_minimalist-wallpaper-video-game-video-games-minimalistic-cool.jpg" alt="wasd">
-          <div class="card-body">
+          <div class="card-body" id="interest2">
             <h5 class="card-title">Video Games</h5>
             <p class="card-text">I like video games because they are a fun way to pass time.</p>
+            <a href="#" class="btn" onclick="addCard(interest2)">Add</a>
+            
           </div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="card">
           <img class="card-img-top" id="skateboarding_card_img" src="http://wallpaperspics.com/thumbs/25/6/skate-background-designed-256582.jpg" alt="Skateboarding" >
-          <div class="card-body">
+          <div class="card-body" id="interest3">
             <h5 class="card-title">Skateboarding</h5>
             <p class="card-text">I like skateboarding because it is fun to do tricks.</p>
+            <a href="#" class="btn" onclick="addCard(interest3)">Add</a>
           </div>
         </div>
       </div>
